@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: flask-backend
+  description: Flask backend API service
+  annotations:
+    backstage.io/techdocs-ref: url:http://localhost:8091/docs
+spec:
+  type: service
+  lifecycle: production
+  owner: team-flask

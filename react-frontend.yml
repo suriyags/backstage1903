@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-frontend
+  description: React frontend application
+  annotations:
+    backstage.io/techdocs-ref: url:http://localhost:3000/docs
+spec:
+  type: website
+  lifecycle: production
+  owner: team-react
