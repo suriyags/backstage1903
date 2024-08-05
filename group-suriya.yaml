@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: suriyags
+  namespace: default
+  description: This is the team responsible for the my-react-flask-app.
+spec:
+  type: team
+  profile:
+    displayName: Suriyags Team
+    email: suriyags-team@example.com
+  children: []
