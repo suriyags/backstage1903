@@ -1,23 +1,20 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage
+  name: my-react-flask-app
   description: |
-    Backstage is an open-source developer portal that puts the developer experience first.    
+    A simple React frontend and Python Flask backend application.
   links:
-    - title: Website
-      url: http://backstage.io
-    - title: Documentation
-      url: https://backstage.io/docs
-    - title: Storybook
-      url: https://backstage.io/storybook
-    - title: Discord Chat
-      url: https://discord.com/invite/EBHEGzX
+    - title: React Frontend
+      url: http://localhost:3001
+    - title: Flask Backend
+      url: http://localhost:8090
+    - title: GitHub Repository
+      url: https://github.com/suriyags/backstage1903/tree/master
   annotations:
-    github.com/project-slug: backstage/backstage
+    github.com/project-slug: suriyags/backstage1903
     backstage.io/techdocs-ref: dir:.
-    lighthouse.com/website-url: https://backstage.io
 spec:
-  type: library
-  owner: CNCF
+  type: application
+  owner: suriyags
   lifecycle: experimental
