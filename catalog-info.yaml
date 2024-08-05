@@ -7,9 +7,13 @@ metadata:
     type: frontend
   links:
     - url: http://192.168.1.3:3001/
-      title: frontend
+      title: Frontend Dashboard
       icon: dashboard
       type: admin-dashboard
+    - url: http://192.168.1.3:3001/docs
+      title: Frontend Documentation
+      icon: documentation
+      type: documentation
 spec:
   type: service
   lifecycle: production
@@ -26,9 +30,13 @@ metadata:
     type: backend
   links:
     - url: http://192.168.1.3:8091/get_device
-      title: backend
-      icon: dashboard
-      type: admin-dashboard
+      title: Backend API
+      icon: api
+      type: api-docs
+    - url: http://192.168.1.3:8091/docs
+      title: Backend Documentation
+      icon: documentation
+      type: documentation
 spec:
   type: service
   lifecycle: production
