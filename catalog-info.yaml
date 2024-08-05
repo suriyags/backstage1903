@@ -1,4 +1,19 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: suriyags
+  description: A group for the suriyags team
+  namespace: default
+spec:
+  type: team
+  children:
+    - my-react-frontend
+    - my-flask-backend
+
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: my-react-frontend
@@ -8,7 +23,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
 
 ---
 
@@ -22,7 +37,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
 
 ---
 
@@ -33,7 +48,7 @@ metadata:
   description: The system that contains my frontend and backend services
 spec:
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
   components:
     - my-react-frontend
     - my-flask-backend
