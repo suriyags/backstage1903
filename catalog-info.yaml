@@ -5,6 +5,9 @@ metadata:
   description: A React frontend application
   labels:
     type: frontend
+  annotations:
+    backstage.io/tech-docs-like: 'true'
+    backstage.io/frontend-url: 'http://192.168.1.3:3001/'
   links:
     - url: http://192.168.1.3:3001/
       title: Frontend Dashboard
@@ -28,6 +31,9 @@ metadata:
   description: A Flask backend service
   labels:
     type: backend
+  annotations:
+    backstage.io/api-url: 'http://192.168.1.3:8091'
+    backstage.io/backend-api-version: 'v1'
   links:
     - url: http://192.168.1.3:8091/get_device
       title: Backend API
@@ -49,6 +55,8 @@ kind: System
 metadata:
   name: my-system
   description: The system that contains my frontend and backend services
+  annotations:
+    backstage.io/system-architect: 'suriyags'
 spec:
   lifecycle: production
   owner: suriyags
