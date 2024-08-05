@@ -26,7 +26,7 @@ metadata:
     type: backend
   links:
     - url: http://192.168.1.3:8091/get_device
-      title: frontend
+      title: backend
       icon: dashboard
       type: admin-dashboard
 spec:
