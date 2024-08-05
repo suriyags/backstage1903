@@ -12,6 +12,7 @@ spec:
 
 ---
 
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -19,10 +20,10 @@ metadata:
   description: A React frontend application
   labels:
     type: frontend
-  spec:
-    type: service
-    lifecycle: production
-    owner: default/suriyags
+spec:
+  type: service
+  lifecycle: production
+  owner: your-team
 
 ---
 
@@ -33,10 +34,10 @@ metadata:
   description: A Flask backend service
   labels:
     type: backend
-  spec:
-    type: service
-    lifecycle: production
-    owner: default/suriyags
+spec:
+  type: service
+  lifecycle: production
+  owner: your-team
 
 ---
 
@@ -47,7 +48,7 @@ metadata:
   description: The system that contains my frontend and backend services
 spec:
   lifecycle: production
-  owner: default/suriyags
+  owner: your-team
   components:
     - my-react-frontend
     - my-flask-backend
