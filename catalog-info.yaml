@@ -5,11 +5,6 @@ metadata:
   description: A group for the suriyags team
 spec:
   type: team
-  profile:
-    displayName: Suriyags Team
-    email: suriya03.gs@gmail.com# Use a valid email
-  members:
-    - suriya03.gs@gmail.com
   children:
     - my-react-frontend
     - my-flask-backend
