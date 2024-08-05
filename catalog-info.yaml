@@ -45,5 +45,5 @@ spec:
   lifecycle: production
   owner: suriyags
   components:
-    - my-react-frontend
-    - my-flask-backend
+    - ref: my-react-frontend
+    - ref: my-flask-backend
