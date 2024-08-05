@@ -1,20 +1,39 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-react-flask-app
-  description: |
-    A simple React frontend and Python Flask backend application.
-  links:
-    - title: React Frontend
-      url: http://localhost:3001
-    - title: Flask Backend
-      url: http://localhost:8090
-    - title: GitHub Repository
-      url: https://github.com/suriyags/backstage1903/tree/master
-  annotations:
-    github.com/project-slug: suriyags/backstage1903
-    backstage.io/techdocs-ref: dir:.
+  name: my-react-frontend
+  description: A React frontend application
+  labels:
+    type: frontend
 spec:
-  type: application
-  owner: suriyags
-  lifecycle: experimental
+  type: service
+  lifecycle: production
+  owner: your-team
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-flask-backend
+  description: A Flask backend service
+  labels:
+    type: backend
+spec:
+  type: service
+  lifecycle: production
+  owner: your-team
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: my-system
+  description: The system that contains my frontend and backend services
+spec:
+  lifecycle: production
+  owner: your-team
+  components:
+    - my-react-frontend
+    - my-flask-backend
