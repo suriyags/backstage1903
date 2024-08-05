@@ -6,6 +6,11 @@ metadata:
   namespace: default
 spec:
   type: team
+  profile:
+    displayName: Suriyags Team
+    email: suriya03.gs@gmail.com# Use a valid email
+  members:
+    - suriya03.gs@gmail.com
   children:
     - my-react-frontend
     - my-flask-backend
@@ -23,7 +28,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: default/suriyags
+  owner: suriyags
 
 ---
 
@@ -37,7 +42,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: default/suriyags
+  owner: suriyags
 
 ---
 
@@ -48,7 +53,7 @@ metadata:
   description: The system that contains my frontend and backend services
 spec:
   lifecycle: production
-  owner: default/suriyags
+  owner: suriyags
   components:
     - my-react-frontend
     - my-flask-backend
