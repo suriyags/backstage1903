@@ -3,7 +3,6 @@ kind: Group
 metadata:
   name: suriyags
   description: A group for the suriyags team
-  namespace: default
 spec:
   type: team
   profile:
