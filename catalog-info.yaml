@@ -32,8 +32,8 @@ metadata:
   labels:
     type: backend
   annotations:
-    backstage.io/api-url: 'http://192.168.1.3:8091'
-    backstage.io/backend-api-version: 'v1'
+    backstage.io/view-url: 'http://192.168.1.3:8091'
+    backstage.io/managed-by-location: url:https://github.com/suriyags/backstage1903/blob/master/app-config.yaml
   links:
     - url: http://192.168.1.3:8091/get_device
       title: Backend API
