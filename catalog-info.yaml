@@ -23,7 +23,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
 
 ---
 
@@ -37,7 +37,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
 
 ---
 
@@ -48,7 +48,7 @@ metadata:
   description: The system that contains my frontend and backend services
 spec:
   lifecycle: production
-  owner: your-team
+  owner: default/suriyags
   components:
     - my-react-frontend
     - my-flask-backend
