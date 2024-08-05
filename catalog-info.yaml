@@ -1,19 +1,4 @@
 apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: suriyags
-  description: A group for the suriyags team
-  namespace: default
-spec:
-  type: team
-  children:
-    - my-react-frontend
-    - my-flask-backend
-
-
----
-
-apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: my-react-frontend
