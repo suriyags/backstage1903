@@ -26,4 +26,5 @@ def releaseinfo():
 
 
 if __name__ == '__main__':
+    print("processing")
     app.run(host='0.0.0.0',port='8091',debug=True)
